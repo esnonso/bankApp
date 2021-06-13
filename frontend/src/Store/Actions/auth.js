@@ -1,0 +1,30 @@
+import {apiCall}  from '../../Services/api';
+import { SET_CURRENT_USER } from '../actionTypes';
+
+export  function setCurrentUser(user){
+    return{
+        type:SET_CURRENT_USER,
+        user
+    }
+}
+
+export function authUser(userData) {
+    console.log(userData)
+    return dispatch => {
+        return new Promise((resolve, reject)=> {
+            return apiCall("post", `http://localhost:3001/api/auth/signin`, userData)
+            .then(({...user})=> {
+                //localStorage.setItem("jwtToken", token)
+                //setAuthorizationToken(token)
+                dispatch(setCurrentUser(user))
+                //dispatch(removeError())
+                resolve();
+            })
+            .catch(err =>{
+                //dispatch(addError("Invalid Username or Password"))
+                reject(err)
+            })
+        })
+    }
+}
+
