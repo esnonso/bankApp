@@ -1,11 +1,11 @@
 import { Switch, Route, withRouter} from 'react-router-dom';
 import Homepage from '../Components/homepage';
-import Personal from '../Components/personal';
+import Personal from '../Containers/personal';
 import Business from '../Components/business';
 import AuthForm from '../Components/AuthForm';
 import { authUser } from '../Store/Actions/auth';
 import { connect } from 'react-redux'; 
-
+//import withAuth from '../hocs/withAuth';
 
 const Main = props => {
     const { authUser, currentUser } = props;

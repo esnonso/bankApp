@@ -1,0 +1,46 @@
+.modals input {
+    border:none
+}
+.modals select {
+    border:none
+}
+.modals textarea {
+    border: none;
+}
+
+
+.modals {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .modals-content {
+    height: 550px;
+    border-radius: 20px;
+    background-color: #ECECEC;
+  }
+  .modals-header, .modals-footer{
+    padding: 10px;
+  }
+  .modals-title {
+    margin:5px;
+  }
+  .modals-body {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee ;
+  }
+  .modal-close-btn {
+    margin:5px;
+    float: right;
+  }
+  .lil-mar {
+    margin-bottom: 10px;
+  }

@@ -7,7 +7,7 @@ const Homepage = () => {
         <Container fluid>
             <Row style={{padding:30}}>
                 <Col xs={12} lg={7} >
-                    <h1 className="text-center text-success">Welcome to World Best Bank's Online Banking Service!</h1>
+                    <h1 className="text-center">Welcome to World Best Bank's Online Banking Service!</h1>
                     <p>
                     Our Internet Banking Service offers fast and convenient access to your County Bank
                     accounts 24 hours a day, 7 days a week, with the highest level of security available.
@@ -23,7 +23,7 @@ const Homepage = () => {
                     </ul>
                 </Col>
                 <Col lg={5} xs={12} >
-                    <h1 className="text-center text-success">Over 125 years of Leading Banking Services</h1>
+                    <h1 className="text-center">Over 125 years of Leading Banking Services</h1>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
