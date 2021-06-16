@@ -1,13 +1,21 @@
 .modals input {
-    border:none
+    border:none;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    font-size: 10px;
 }
 .modals select {
-    border:none
+    border:none;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    font-size: 10px;
 }
 .modals textarea {
     border: none;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    font-size: 10px;
 }
-
 
 .modals {
     position: fixed;
@@ -15,16 +23,15 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #014554;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: #F5F5F5;
   }
   .modals-content {
-    height: 550px;
     border-radius: 20px;
-    background-color: #ECECEC;
   }
   .modals-header, .modals-footer{
     padding: 10px;

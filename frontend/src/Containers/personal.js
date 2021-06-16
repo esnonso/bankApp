@@ -15,7 +15,7 @@ class Personal extends Component {
                 <Jumbotron className="text-center">
                          <h1>World Best Bank Image</h1>
                          <p className="text-muted">A local Bank to serve the world</p>
-                     </Jumbotron>
+                </Jumbotron>
              <Row >
                  <Col lg={6} xs={12}>
                      <Card>

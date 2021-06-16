@@ -1,12 +1,16 @@
 import card1 from '../Images/card1.jpg';
 import card2 from '../Images/card2.jpg';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Jumbotron } from 'react-bootstrap';
 
 const Homepage = () => {
     return(
-        <Container fluid>
-            <Row style={{padding:30}}>
-                <Col xs={12} lg={7} >
+        <Container >
+                <Jumbotron className="text-center">
+                         <h1>World Best Bank Image</h1>
+                         <p className="text-muted">A local Bank to serve the world</p>
+                </Jumbotron>
+            <Row style={{padding:30, borderTop:"4px #014554 solid", borderBottom:"4px #014554 solid", borderRadius:20}}>
+                <Col xs={12} lg={12} className="text-center">
                     <h1 className="text-center">Welcome to World Best Bank's Online Banking Service!</h1>
                     <p>
                     Our Internet Banking Service offers fast and convenient access to your County Bank
@@ -14,7 +18,7 @@ const Homepage = () => {
                     </p>
                     <h3>Features</h3>
                      <p>Features available from County Bank Online banking include:</p>
-                    <ul>
+                    <ul >
                         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
                         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
                         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
@@ -22,7 +26,7 @@ const Homepage = () => {
                         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
                     </ul>
                 </Col>
-                <Col lg={5} xs={12} >
+                <Col lg={12} xs={12} >
                     <h1 className="text-center">Over 125 years of Leading Banking Services</h1>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's

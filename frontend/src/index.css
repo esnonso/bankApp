@@ -110,6 +110,8 @@ code {
   padding-bottom: 50px;
 }
  .nav-pic{
+   margin-top: -20px;
+   margin-bottom: 20px;
   height:100px;
   width: 100%;
   background-image: url('./Images/footer.jpg');
@@ -141,9 +143,80 @@ code {
    text-align: right;
  }
 .dashboard-acct{
-  background-color: #3b575e;
+  background-color: #014554;
   color: aliceblue;
   align-items: center;
   padding: 20px;
   border-radius: 20px;
+}
+.spin{
+  border: solid 5px #cfd0d1;
+  border-bottom-color: #1c87c9;
+  border-radius: 50%;
+  height: 100px;
+  width:100px;
+  margin: 20px;
+  animation: 1s rotate infinite reverse;
+}
+
+@keyframes rotate {
+	from{
+		transform:rotate(0deg)
+	}
+	to{
+		transform:rotate(360deg)
+	}
+}
+
+.spin-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.popup-container{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.success{
+  background-color: #458754;
+  color: white;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 0px;
+  font-size: 30px;
+  border-radius: 50%;
+}
+
+.success:hover{
+  cursor: pointer;
+}
+
+.popup-content {
+  background-color: white;
+  border-radius: 20px;
+  padding-top: 20px;
+  color: black;
+}
+
+li {
+  list-style-type: none;
 }

@@ -1,6 +1,11 @@
+import { Container, Jumbotron } from "react-bootstrap";
 const Business = () => {
     return(
         <div className="container">
+                <Jumbotron className="text-center">
+                         <h1>World Best Bank Image</h1>
+                         <p className="text-muted">A local Bank to serve the world</p>
+                </Jumbotron>
             <div className="panel panel-default">
                 <div className="panel-heading" style={{textAlign:'center'}}><h1>Business Checkings</h1></div>
                 <div className="panel-body">
@@ -12,7 +17,7 @@ const Business = () => {
                         help you manage your finances so you are free to focus on other important things - like growing a successful business.
                     </p>
                     <ul>
-                        <li>Minimum deposit to open account $50.00</li>
+                        <li>Minimum deposit to open account</li>
                         <li>$7.50 monthly service charge fee</li>
                         <li>No per check charge for first 100 checks written per statement cycle</li>
                         <li>Free Internet Banking with Online Bill Payment available (upon approval)</li>
